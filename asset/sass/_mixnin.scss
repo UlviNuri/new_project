@@ -1,0 +1,27 @@
+@mixin  Flex ($content,$item){
+    display: flex;
+    align-items: $item;
+    justify-content: $content;
+}
+
+@mixin  Absaulte ($abs_te,$top,$left,$f_size) {
+    position: $abs_te;
+    top: $top;
+    left: $left;
+    font-size: $f_size;
+}
+
+@mixin  A_link ($pad,$f_size,$f_weight){
+    padding:$pad ;
+    font-size: $f_size;
+    font-weight: $f_weight;
+}
+
+@mixin P_text ($clr,$f_size,$f_weight,$l_height,$opa,$mt) {
+    color: $clr;
+    font-size: $f_size;
+    font-weight: $f_weight;
+    line-height: $l_height;
+    opacity: $mt;
+    margin-top: $mt;
+}
